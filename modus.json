@@ -13,6 +13,11 @@
       "sourceModel": "meta-llama/Meta-Llama-3.1-8B-Instruct",
       "provider": "hugging-face",
       "connection": "hypermode"
+    },
+    "distilbert-base-uncased-finetuned-sst-2-english": {
+      "sourceModel": "distilbert/distilbert-base-uncased-finetuned-sst-2-english",
+      "provider": "hugging-face",
+      "connection": "hypermode"
     }
   },
 
@@ -20,6 +25,34 @@
     "zenquotes": {
       "type": "http",
       "baseUrl": "https://zenquotes.io/"
+    },
+    "openai": {
+      "type": "http",
+      "baseUrl": "https://api.openai.com/",
+      "headers": {
+        "Authorization": "Bearer {{API_KEY}}"
+      }
+    },
+    // "hypermode": {
+    //   "type": "http",
+    //   "baseUrl": "https://hipper.hypermode.app/",
+    //   "headers": {
+    //     "Authorization": "Bearer {{API_KEY}}"
+    //   }
+    // },
+    // "hugging-face": {
+    //   "type": "http",
+    //   "baseUrl": "{{BASE_URL}}",
+    //   "headers": {
+    //     "Authorization": "Bearer {{API_KEY}}"
+    //   }
+    // },
+    "anthropic": {
+      "type": "http",
+      "baseUrl": "https://api.anthropic.com/",
+      "headers": {
+        "x-api-key": "{{API_KEY}}"
+      }
     }
   }
 }
